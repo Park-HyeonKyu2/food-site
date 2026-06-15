@@ -1,737 +1,260 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>맛집목록페이지</title>
-    <link rel="stylesheet" href="./css/맛집목록페이지.css">
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            Jukjeon Matjip
-        </header>
-
-        <nav>
-            <a href="#korean">
-                <div class="menu1">한식</div>
-            </a>
-            <a href="#chinese">
-                <div class="menu2">중식</div>
-            </a>
-            <a href="#japanese">
-                <div class="menu3">일식</div>
-            </a>
-            <a href="#cafe">
-                <div class="menu4">카페 & 디저트</div>
-            </a>
-        </nav>
-
-        <section class="category-section">
-            <div class="category-row">
-                <h2 id="korean">한식</h2>
-                <div class="slider">
-                    <div class="slide-track">
-                        <!-- 1번째 묶음 -->
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/더맛있는족발보쌈.jpg" alt="더맛있는족발보쌈" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                더맛있는족발보쌈<br><br>
-                                #가성비 좋은&nbsp;&nbsp;#매콤한&nbsp;&nbsp;#술모임<br>
-                                #셀프바 #상호작용 불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/명숙이네 소곱창.jpg" alt="명숙이네 소곱창" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                명숙이네 소곱창<br><br>
-                                #깔끔한&nbsp;&nbsp;#숨은맛집<br>
-                                #푸짐한&nbsp;&nbsp;#상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/수담.jpg" alt="수담" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                수담<br><br>
-                                #얼큰&nbsp;&nbsp;#만두전문<br>
-                                #서민적인&nbsp;&nbsp;#상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/엄마손칼국수.jpg" alt="엄마손칼국수" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                엄마손칼국수<br><br>
-                                #깔끔한&nbsp;&nbsp;#서민적인&nbsp;&nbsp;#줄서서먹는<br>
-                                #상호작용 불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/윤씨네부대찌개.jpg" alt="윤씨네부대찌개" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                윤씨네부대찌개<br><br>
-                                #가성비좋은&nbsp;&nbsp;#서민적인<br>
-                                #무료주차&nbsp;&nbsp;#상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/쿠야지감자탕.jpg" alt="쿠야지감자탕" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                쿠야지감자탕<br><br>
-                                #서민적인&nbsp;&nbsp;#얼큰&nbsp;&nbsp;#아침식사<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/탑골순대국.jpg" alt="탑골순대국" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                탑골순대국<br><br>
-                                #숨은맛집&nbsp;&nbsp;#서민적인&nbsp;&nbsp;#혼밥<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/평강삼계탕.jpg" alt="평강삼계탕" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                평강삼계탕<br><br>
-                                #푸짐한&nbsp;&nbsp;#무료주차&nbsp;&nbsp;#점심식사<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-
-                        <!-- 2번째 묶음 -->
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/더맛있는족발보쌈.jpg" alt="더맛있는족발보쌈" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                더맛있는족발보쌈<br><br>
-                                #가성비 좋은&nbsp;&nbsp;#매콤한&nbsp;&nbsp;#술모임<br>
-                                #셀프바 #상호작용 불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/명숙이네 소곱창.jpg" alt="명숙이네 소곱창" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                명숙이네 소곱창<br><br>
-                                #깔끔한&nbsp;&nbsp;#숨은맛집<br>
-                                #푸짐한&nbsp;&nbsp;#상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/수담.jpg" alt="수담" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                수담<br><br>
-                                #얼큰&nbsp;&nbsp;#만두전문<br>
-                                #서민적인&nbsp;&nbsp;#상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/엄마손칼국수.jpg" alt="엄마손칼국수" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                엄마손칼국수<br><br>
-                                #깔끔한&nbsp;&nbsp;#서민적인&nbsp;&nbsp;#줄서서먹는<br>
-                                #상호작용 불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/윤씨네부대찌개.jpg" alt="윤씨네부대찌개" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                윤씨네부대찌개<br><br>
-                                #가성비좋은&nbsp;&nbsp;#서민적인<br>
-                                #무료주차&nbsp;&nbsp;#상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/쿠야지감자탕.jpg" alt="쿠야지감자탕" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                쿠야지감자탕<br><br>
-                                #서민적인&nbsp;&nbsp;#얼큰&nbsp;&nbsp;#아침식사<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/탑골순대국.jpg" alt="탑골순대국" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                탑골순대국<br><br>
-                                #숨은맛집&nbsp;&nbsp;#서민적인&nbsp;&nbsp;#혼밥<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card korean">
-                            <div class="food-img">
-                                <img src="./img/korean/평강삼계탕.jpg" alt="평강삼계탕" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                평강삼계탕<br><br>
-                                #푸짐한&nbsp;&nbsp;#무료주차&nbsp;&nbsp;#점심식사<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category-row">
-                <h2 id="chinese">중식</h2>
-                <div class="slider">
-                    <div class="slide-track">
-                        <!-- 1번째 묶음 -->
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/마라공방.jpg" alt="마라공방" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                마라공방<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/미가훠궈양고기.jpg" alt="미가훠궈양고기" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                미가훠궈양고기<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/보배반점.jpg" alt="보배반점" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                보배반점<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/싱카이.jpg" alt="싱카이" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                싱카이<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/차이니스 퀴진 유.jpg" alt="차이니스 퀴진 유" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                차이니스 퀴진 유<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/팔복.jpg" alt="팔복" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                팔복<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/팔선생.jpg" alt="팔선생" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                팔선생<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/희객.jpg" alt="희객" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                희객<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-
-                        <!-- 2번째 묶음 -->
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/마라공방.jpg" alt="마라공방" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                마라공방<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/미가훠궈양고기.jpg" alt="미가훠궈양고기" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                미가훠궈양고기<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/보배반점.jpg" alt="보배반점" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                보배반점<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/싱카이.jpg" alt="싱카이" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                싱카이<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/차이니스 퀴진 유.jpg" alt="차이니스 퀴진 유" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                차이니스 퀴진 유<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/팔복.jpg" alt="팔복" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                팔복<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/팔선생.jpg" alt="팔선생" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                팔선생<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card chinese">
-                            <div class="food-img">
-                                <img src="./img/chinese/희객.jpg" alt="희객" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                희객<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="category-row">
-                <h2 id="japanese">일식</h2>
-                <div class="slider">
-                    <div class="slide-track">
-                        <!-- 1번째 묶음 -->
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/경양카츠.jpg" alt="경양카츠" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                경양카츠<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/고쿠텐.jpg" alt="고쿠텐" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                고쿠텐<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/긴자료코.jpg" alt="긴자료코" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                긴자료코<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/소중한점.jpg" alt="소중한점" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                소중한점<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/야키토리 동작.jpg" alt="야키토리 동작" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                야키토리 동작<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/요루히루.jpg" alt="요루히루" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                요루히루<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/우리동네스시신조.jpg" alt="우리동네스시신조" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                우리동네스시신조<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/코이라멘.jpg" alt="코이라멘" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                코이라멘<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-
-                        <!-- 2번째 묶음 -->
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/경양카츠.jpg" alt="경양카츠" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                경양카츠<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/고쿠텐.jpg" alt="고쿠텐" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                고쿠텐<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/긴자료코.jpg" alt="긴자료코" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                긴자료코<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/소중한점.jpg" alt="소중한점" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                소중한점<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/야키토리 동작.jpg" alt="야키토리 동작" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                야키토리 동작<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/요루히루.jpg" alt="요루히루" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                요루히루<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/우리동네스시신조.jpg" alt="우리동네스시신조" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                우리동네스시신조<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card japanese">
-                            <div class="food-img">
-                                <img src="./img/japanese/코이라멘.jpg" alt="코이라멘" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                코이라멘<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="category-row">
-                <h2 id="cafe">카페·디저트</h2>
-                <div class="slider">
-                    <div class="slide-track">
-                        <!-- 1번째 묶음 -->
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/내복곰과자점.jpg" alt="내복곰과자점" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                내복곰과자점<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/레드빅.jpg" alt="레드빅" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                레드빅<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/백금당.jpg" alt="백금당" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                백금당<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/스테이 어도러블.jpg" alt="스테이 어도러블" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                스테이 어도러블<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/카페클린트.jpg" alt="카페클린트" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                카페클린트<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <a href="./쿠브봉.html">
-                            <div class="food-card cafe">
-                                <div class="food-img">
-                                    <img src="./img/cafe/쿠크봉.jpg" alt="쿠크봉" class="food-image">
-                                </div>
-                                <div class="food-info">
-                                    쿠크봉<br><br>
-                                    #짱 맛있음<br>
-                                    #상호작용가능
-                                </div>
-
-                            </div>
-                        </a>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/토텐.jpg" alt="토텐" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                토텐<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/하프커피.jpg" alt="하프커피" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                하프커피<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
+:root {
+    --main-bg: #fff8f0;
+    --main-orange: #ff9f43;
+    --text-main: #222;
+    --border-gray: #aaa;
+    --shadow: rgba(0, 0, 0, 0.08);
+}
 
 
-                        <!-- 2번째 묶음 -->
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/내복곰과자점.jpg" alt="내복곰과자점" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                내복곰과자점<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/레드빅.jpg" alt="레드빅" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                레드빅<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/백금당.jpg" alt="백금당" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                백금당<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/스테이 어도러블.jpg" alt="스테이 어도러블" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                스테이 어도러블<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/카페클린트.jpg" alt="카페클린트" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                카페클린트<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <a href="./쿠브봉.html" class="food-link">
-                            <div class="food-card cafe">
+@font-face {
+    font-family: 'RomanticGumi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
 
-                                <div class="food-img">
-                                    <img src="./img/cafe/쿠크봉.jpg" alt="쿠크봉" class="food-image">
-                                </div>
-                                <div class="food-info">
-                                    쿠크봉<br><br>
-                                    #짱 맛있음 #밑줄못지우겠다.<br>
-                                    #상호작용가능 
-                                </div>
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
 
-                            </div>
-                        </a>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/토텐.jpg" alt="토텐" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                토텐<br><br>
-                                #짱 맛있음<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                        <div class="food-card cafe">
-                            <div class="food-img">
-                                <img src="./img/cafe/하프커피.jpg" alt="하프커피" class="food-image">
-                            </div>
-                            <div class="food-info">
-                                하프커피<br><br>
-                                #끝끝끝끝<br>
-                                #상호작용불가
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <footer>
-            <div class="footer-info">
-                <p>상호: Jukjeon Matjip</p>
-                <p>대표: 박현규</p>
-                <p>고객센터: 1588-1234</p>
-                <p>이메일: Jukjeon@Matjip.com</p>
-                <p>© 2026 Jukjeon Matjip. All Rights Reserved.</p>
-            </div>
-        </footer>
-</body>
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
 
-</html>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'RomanticGumi' Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-main)
+}
+
+.container {
+    width: 100%;
+    margin: 30px auto;
+}
+
+header {
+    height: 100px;
+    border-radius: 24px;
+    background-color: var(--main-orange);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+nav>a>div {
+    height: 60px;
+    border-radius: 18px;
+    background-color: white;
+    border: 2px solid var(--main-orange);
+    color: #ff7f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.32s;
+}
+
+nav>a>div:hover {
+    background-color: var(--main-orange);
+    color: white;
+    transform: translateY(-4px);
+}
+
+nav a {
+    color: var(--main-orange);
+    text-decoration: none;
+}
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section {
+    font-family: 'NexonMaplestory', Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+}
+
+.category-row {
+    width: 100%;
+}
+
+.category-row h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+    padding-left: 8px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid var(--main-orange);
+    border-radius: 24px;
+    background-color: white;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.slide-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: slide 48s linear infinite;
+}
+
+.slide-track a {
+    flex-shrink: 0;
+}
+
+.food-card {
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.slider:hover .slide-track {
+    animation-play-state: paused;
+}
+
+.food-card {
+    width: 260px;
+    height: 300px;
+    border-radius: 22px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.32s;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.container .cafe .food-link .food-info {
+    text-decoration-line: none;
+}
+
+.food-img {
+    height: 180px;
+    display: flex;
+
+}
+
+.food-info {
+    height: 120px;
+    padding: 12px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.korean {
+    background-color: #ff7f00;
+}
+
+.chinese {
+    background-color: sienna;
+}
+
+.japanese {
+    background-color: blueviolet;
+}
+
+.cafe {
+    background-color: deeppink;
+}
+
+.food-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    margin-top: 80px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-top: 2px solid var(--border-gray);
+    text-align: center;
+    color: var(--text-main);
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+
+
+    header {
+        width: 100%;
+        display: flex;
+        left: 0px;
+        justify-content: center;
+    }
+
+    nav>a>div {
+    border: 4px solid var(--main-orange);
+    }
+
+    .korean {
+        border: 4px solid #ff7f00;
+    }
+
+    .chinese {
+        border: 4px solid sienna;
+    }
+
+    .japanese {
+        border: 4px solid blueviolet;
+    }
+
+    .cafe {
+        border: 4px solid deeppink;
+    }
+    footer {
+        width: 100%;
+        position: flex;
+        left: 0px;
+        bottom: 0px;
+    }
+
+}
