@@ -1,0 +1,213 @@
+:root {
+    --main-bg: #fff8f0;
+    --main-orange: #ff9f43;
+    --text-main: #222;
+    --border-gray: #aaa;
+    --shadow: rgba(0, 0, 0, 0.08);
+}
+
+
+@font-face {
+    font-family: 'RomanticGumi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'RomanticGumi' Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-main)
+}
+
+.container {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+header {
+    height: 100px;
+    border-radius: 24px;
+    background-color: var(--main-orange);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+nav>a>div {
+    height: 60px;
+    border-radius: 18px;
+    background-color: white;
+    border: 2px solid var(--main-orange);
+    color: #ff7f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.32s;
+}
+
+nav>a>div:hover {
+    background-color: var(--main-orange);
+    color: white;
+    transform: translateY(-4px);
+}
+
+nav a {
+    color: var(--main-orange);
+    text-decoration: none;
+}
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section {
+    font-family: 'NexonMaplestory', Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+}
+
+.category-row {
+    width: 100%;
+}
+
+.category-row h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+    padding-left: 8px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid var(--main-orange);
+    border-radius: 24px;
+    background-color: white;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.slide-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: slide 48s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.slider:hover .slide-track {
+    animation-play-state: paused;
+}
+
+.food-card {
+    width: 260px;
+    height: 300px;
+    border-radius: 22px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.32s;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.container .cafe .food-link .food-info {
+    text-decoration-line: none;
+}
+
+.food-img {
+    height: 180px;
+    display: flex;
+
+}
+
+.food-info {
+    height: 120px;
+    padding: 12px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.korean {
+    background-color: #ff7f00;
+}
+
+.chinese {
+    background-color: sienna;
+}
+
+.japanese {
+    background-color: blueviolet;
+}
+
+.cafe {
+    background-color:deeppink;
+}
+
+.food-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    margin-top: 80px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-top: 2px solid var(--border-gray);
+    text-align: center;
+    color: var(--text-main);
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}

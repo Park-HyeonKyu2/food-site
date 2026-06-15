@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'RomanticGumi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonMaplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    --main-bg: #fff8f0;
+    --main-orange: #ff9f43;
+    --text-main: #222;
+    --border-gray: #aaa;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.main {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--main-orange);
+    background-color: var(--main-bg);
+
+    margin-bottom: 40px;
+}
+
+.main-slide {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    animation: Slide 18s infinite;
+}
+
+.main-img {
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes Slide {
+
+    /* 1번 멈춤 */
+    0% {
+        transform: translateX(0);
+    }
+
+    22% {
+        transform: translateX(0);
+    }
+
+    /* 2번 이동 */
+    28% {
+        transform: translateX(-25%);
+    }
+
+    /* 2번 멈춤 */
+    50% {
+        transform: translateX(-25%);
+    }
+
+    /* 3번 이동 */
+    56% {
+        transform: translateX(-50%);
+    }
+
+    /* 3번 멈춤 */
+    78% {
+        transform: translateX(-50%);
+    }
+
+    /* 1번 사진으로 이동 */
+    84% {
+        transform: translateX(-75%);
+    }
+
+    /* 1번 멈춤 */
+    100% {
+        transform: translateX(-75%);
+    }
+}
+
+
+#container {
+    position: relative;
+    margin: auto;
+    width: 1100px;
+    height: 1585px;
+    background-color: white;
+    border-right: 2px solid var(--main-orange);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    left: 180px;
+    width: calc(100% - 180px);
+    height: 110px;
+    padding: 18px 24px;
+    border: 2px solid var(--border-gray);
+    border-radius: 0 0 24px 24px;
+    background-color: white;
+    color: var(--text-main);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.title h1 {
+    font-family: 'RomanticGumi', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    color: var(--main-orange);
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
+
+.title p {
+    font-size: 14px;
+    color: #666;
+}
+
+.search {
+    flex: 2;
+    max-width: 480px;
+    height: 58px;
+    padding: 0 8px 0 24px;
+    border: 2px solid var(--main-orange);
+    border-radius: 100px;
+    background-color: var(--main-bg);
+    color: #777;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    cursor: text;
+}
+
+.search-button {
+    width: 78px;
+    height: 42px;
+    border-radius: 100px;
+    background-color: var(--main-orange);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.32s;
+}
+
+.search-button:hover {
+    transform: scale(1.02);
+}
+
+.icon {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+}
+
+.icon a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.icon a:hover {
+    color: var(--main-orange);
+}
+
+nav {
+    font-family: 'NexonMaplestory', Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    padding: 28px 16px;
+    background-color: var(--main-orange);
+    color: white;
+}
+
+.nav-logo {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 3px dotted rgba(255, 255, 255, 0.45);
+}
+
+.nav-logo h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.nav-logo p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-menu a {
+    height: 48px;
+    padding: 0 14px;
+    background-color: white;
+    border: 2px solid var(--border-gray);
+    border-radius: 14px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.32s;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.nav-menu a:hover {
+    background-color: white;
+    color: var(--main-orange);
+    transform: translateX(6px);
+}
+
+section {
+    position: relative;
+    width: 920px;
+    min-height: 1200px;
+    left: 90px;
+    margin: 10px auto 80px;
+}
+
+.recommendation {
+    width: 920px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.recommend-card {
+    float: left;
+    width: 273px;
+    height: 320px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    border: 2px solid var(--border-gray);
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: white;
+    color: var(--text-main);
+    text-decoration: none;
+    font-family: 'NexonMaplestory';
+    transition: 0.32s;
+}
+
+.recommend-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--main-orange);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.recommend-img {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.recommend-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: 0.32s;
+}
+
+.recommend-info {
+    padding: 16px;
+}
+
+.recommend-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.recommend-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.recommend-info span {
+    font-size: 13px;
+    color: var(--main-orange);
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    margin-top: 80px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-top: 2px solid var(--border-gray);
+    text-align: center;
+    color: var(--text-main);
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
